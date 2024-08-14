@@ -13,14 +13,32 @@
     <script src="js/script.js" defer></script>
     <script>
         $(function () {
-            $('#header').load('assets/php/header.html');
             $('#footer').load('assets/php/footer.html');
         })
     </script>
 </head>
 
 <body class="bg-black text-white h-dvh">
-    <header id="header"></header>
+    <header>
+    <nav class="bg-animated cyber-grid fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold neon-text glitch-effect" data-text="Carmen Ferlatte">Carmen Ferlatte</a>
+                <label for="menu-toggle">Portefolio</label>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="menu-icon cursor-pointer md:hidden">
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="menu hidden md:flex md:items-center space-x-10">
+                    <li><a href="index.html" class="nav-link" data-text="Accueil">Accueil</a></li>
+                    <li><a href="realisations.html" class="nav-link" data-text="Réalisations">Réalisations</a></li>
+                    <li><a href="contact.html" class="nav-link" data-text="Contact">Contact</a></li>
+                    <!-- <li><a href="#" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-4 rounded hover:from-cyan-600 hover:to-blue-600 transition-all duration-300">Sign Up</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
     <main>
  <div class="flex max-w-screen-2xl mx-auto h-screen items-center justify-center p-5 pb-0 md:pt-48 lg:pt-0">
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 md:px-10 md:pb-20 ">
