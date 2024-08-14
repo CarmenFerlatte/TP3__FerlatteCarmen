@@ -27,7 +27,7 @@ const menuToggle = document.getElementById('menu-toggle');
 
 document.addEventListener('DOMContentLoaded', function () {
             // Charger le header
-            $('#header').load('../assets/php/header.html', function() {
+            $('#header').load('../assets/', function() {
                 let navbar = document.querySelector('.bg-animated');
                 if (navbar) {
                     let lastScrollTop = 0;
@@ -50,5 +50,5 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             // Charger le footer
-            $('#footer').load('../assets/php/footer.html');
+            $('#footer').load('assets/php/footer.html');
         });

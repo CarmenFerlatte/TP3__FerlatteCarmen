@@ -50,5 +50,5 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             // Charger le footer
-            $('#footer').load('../assets/php/footer.html');
+            $('#footer').load('../assetsassets/php/footer.html');
         });
