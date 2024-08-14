@@ -1,0 +1,11 @@
+{
+    "name": "Portefolio",
+    "short_name": "Portefolio",
+    "screenshots": [
+        {
+            "src": "img/screenshots/screenshot_1.png",
+            "sizes": "1348x766",
+            
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mon Portefolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/navbar.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="bg-black text-white h-dvh">
+    <header>
+    <nav class="bg-animated cyber-grid fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold neon-text glitch-effect" data-text="Carmen Ferlatte">Carmen Ferlatte</a>
+                <label for="menu-toggle">Portefolio</label>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="menu-icon cursor-pointer md:hidden">
+                    <span class="hamburger"></span>
+                </label>
+                <ul class="menu hidden md:flex md:items-center space-x-10">
+                    <li><a href="#" class="nav-link" data-text="Accueil">Accueil</a></li>
+                    <li><a href="#" class="nav-link" data-text="Réalisations">Réalisations</a></li>
+                    <li><a href="#" class="nav-link" data-text="Contact">Contact</a></li>
+                    <!-- <li><a href="#" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-4 rounded hover:from-cyan-600 hover:to-blue-600 transition-all duration-300">Sign Up</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main>
+ <div class="flex max-w-screen-2xl mx-auto h-screen items-center justify-center p-5 pb-0">
+    <div class="grid grid-cols-{1fr, 1fr} md-grid-cols-[1fr,1fr] grid-cols-2 items-center gap-10 md:px-10">
+      <div class="flex flex-col items-left">
+        <h1 class="mb-2 pb-5 sm:text-lg text-white"><span class="text-cyan-500 text-3xl font-bold">Salut toi ! 🤝 </span><span class="text-3xl"> Je suis contente de ta visite 😃 .</span></h1>
+        <p class="mb-6 pl-10 text-white">Je me présente, Carmen Ferlatte, je suis web designer et actuellement étudiante en développement web front-end. Ma passion pour le web est insatiable, et je considère cet univers comme une aventure en constante évolution, toujours riche en nouvelles découvertes. 🚣‍♀️  🛫  </p>
+        <p class="mb-6 pl-10 text-white">Je crois fermement 👍  qu'il est essentiel pour toute organisation, qu'elle soit petite, moyenne ou grande, de disposer d'une présence en ligne. Une page web permet non seulement d'aider les utilisateurs à vous trouver plus facilement, mais aussi d'augmenter votre clientèle et de mettre en avant vos offres. 🔈 </p>
+        <p class="mb-6 pl-10 text-white">Mon objectif est de transformer vos idées en expériences digitales captivantes et fonctionnelles, en faisant en sorte que votre projet attire et fidélise votre audience. 🌎 </p>
+        <div class="flex justify-center space-x-5 mt-5">
+          <!-- <button class="flex items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-xl font-semibold text-white hover:bg-rose-700" type="button">
+            Suivez-moi sur Facebook !
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+          </button> -->
+          <button class="flex items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700 btn-lien2" type="button">Suivez-moi sur Facebook !
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+          </button>
+        <button class="flex items-center justify-center gap-2 rounded-2xl bg-cyan-500 p-5 py-3 font-semibold btn-lien" type="button" title="Open Script">Mon parcours
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="img/carmen.jpg" alt="Femme Designer web" class="md:w-full w-72 rounded-2xl mr-20 bg-cyan-500 shadow-md shadow-cyan-500/50" />
+      </div>
+    </div>
+</div>
+
+<div class="h-screen w-full dark:bg-gray-900 cyber-grid">
+
+    <div class="max-w-screen-2xl mx-auto py-10 px-4 md:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 id="section-1" class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
+                Mon parcours
+            </h2>
+        </div>
+        <div class="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-8 auto-rows-fr lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <article
+                class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                <img src="img/keyboard-122729_1920.jpg" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                
+                    <span class="text-sm font-normal text-gray-300">2004</span>
+                    <h3 class="text-xl font-semibold ">Mes Premiers Pas dans la Création de Sites Web !</h3>
+                    <p class="text-md">J'ai découvert l'univers de la création de sites web grâce à FrontPage de Microsoft, qui a marqué mes débuts dans ce domaine.</p>
+                
+            </article>
+            <article
+                class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                <img src="img/dog-4977599_1920.jpg" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                <!-- <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href=""></a> -->
+                    <span class="text-sm font-normal text-gray-300">2021</span>
+                    <h3 class="text-xl font-semi-bold">L'Heure de l’Évolution !</h3>
+                    <p>J'ai décidé de laisser FrontPage derrière moi et de me plonger davantage dans l'apprentissage de la programmation. En tant qu'autodidacte, j'ai approfondi mes connaissances en HTML et CSS, tout en intégrant un peu de JavaScript et de PHP pour répondre aux besoins spécifiques de mes projets web.</p>
+                
+            </article>
+            <article
+                class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                <img src="img/clavier.jpg" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                    <span class="text-sm font-normal text-gray-300">2022-2023</span> <br>
+                    <h3 class="text-xl font-semi-bold">Je veux aller plus loin !</h3><br>
+                    <p>Ma formation en design web pour acquérir de nouvelles compétences.<br>
+                    Les outils de design tel que Figma, Balsamiq, Notion, Adobe XD, Photoshop, InDesign et Illustrator me permet de créer des maquettes de site web plus professionnelles. Avec cette formation, cela m'a permis d'en apprendre plus sur la création de site Web avec les plateformes CMS tel que Wordpress et Wix.</p>
+                </a>
+            </article>
+            <article
+                class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxhaXxlbnwwfDB8fHwxNzEyNzUzMTQ4fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                    <span class="text-sm font-normal text-gray-300">2023</span><br>
+                    Vers de Nouvelles Horizons !<br>
+                    J'ai entrepris une formation en design web afin d'acquérir de nouvelles compétences. L'apprentissage d'outils de design tels que Figma, Adobe XD, Photoshop, InDesign et Illustrator m'a permis de créer des maquettes de sites web plus professionnelles. Cette formation m'a également aidé à me familiariser avec la création de sites web sur des plateformes CMS comme WordPress et Wix..<br>
+                </a>
+            </article>
+            <article
+                class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxibG9jayUyMGNoYWlufGVufDB8MHx8fDE3MTI3NTMxNjd8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                    <span class="text-sm font-normal text-gray-300">2024</span><br>
+                    Un Nouvel Élan !<br>
+                    Je me lance dans le développement web front-end. J'apprends à utiliser des outils de développement tels que Visual Studio Code, Git, GitHub, Node.js, JavaScript, React.js et Tailwind CSS, sans oublier Bootstrap. Mon objectif est de perfectionner mes compétences et d'aller toujours plus loin dans mes projets..<br>
+                </a>
+            </article>
+            <article
+                class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                <img src="https://images.unsplash.com/photo-1666112835156-c65bb806ac73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNXx8cXVhbnR1bSUyMGNvbXB1dGluZ3xlbnwwfDB8fHwxNzEyNzUzMTk2fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+
+                <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                    How Quantum Computing Will<br>
+                    Revolutionize Data Security
+                </a>
+            </article>
+        </div>
+    </div>
+
+</div>
+
+    </main>
+
+    <footer>
+        <div class="container mx-auto px-4 py-10 cyber-grid">
+            <p class="text-center text-white">© 2024 Carmen Ferlatte. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
