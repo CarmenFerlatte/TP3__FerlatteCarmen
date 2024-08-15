@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mon Portefolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script>
+        $(function(){
+            $("#header").load("assets/php/header.html");
+            $("#footer").load("assets/php/footer.html");
+        });
+    </script>
+</head>
+
+<body class="bg-black text-white h-dvh">
+    <header id="header"></header>
+
+<main>
+    <div class="container mx-auto px-4 py-20">
+        <h1 class="text-4xl font-bold text-center mb-10">Mes Réalisations</h1>
+ 
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[00px] md:max-w-[600px] place-items-center">
+    <img class="hover:opacity-75" src="img/screenshots/mon_projet__01__salon_de_coiffure.png" alt="image">
+    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=2" alt="image">
+    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=3" alt="image">
+    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=4" alt="image">
+    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=5" alt="image">
+    <img class="hover:opacity-75" src="https://source.unsplash.com/collection/1346951/150x150?sig=6" alt="image">
+</div>
+</main>
+    <footer id="footer"></footer>
+</body>
+</html>
