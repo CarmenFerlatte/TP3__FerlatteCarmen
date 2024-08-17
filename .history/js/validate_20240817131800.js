@@ -3,7 +3,7 @@
 function validateForm() {
     setTimeout(() => {
         let isValid = true;
-        const fields = ['nom', 'courriel', '_sujet', 'message'];
+        const fields = ['nom', '', '_subject', 'message'];
         fields.forEach(field => {
             const input = document.forms['form'][field];
             const errorSpan = document.getElementById(field + '-error');

@@ -3,7 +3,7 @@
 function validateForm() {
     setTimeout(() => {
         let isValid = true;
-        const fields = ['nom', 'courriel', '_sujet', 'message'];
+        const fields = ['name', 'email', '_subject', 'message'];
         fields.forEach(field => {
             const input = document.forms['form'][field];
             const errorSpan = document.getElementById(field + '-error');
@@ -22,5 +22,5 @@ function validateForm() {
             
         });
         return isValid;
-    }, 100); // Délai de 100ms pour s'assurer que le DOM est chargé.    
+    }, 100); //    
 }

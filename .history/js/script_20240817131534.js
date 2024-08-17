@@ -29,5 +29,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         
-        }, 100); // Délai de 100ms pour s'assurer que le DOM est chargé.
+        }, 100); // Délai de 100ms pour s'assurer que le OM est chargé.
     });
