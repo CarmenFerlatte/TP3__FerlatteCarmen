@@ -1,7 +1,7 @@
 // Navbar menu toggle
 
 $(function() {
-    $('#header').load('assets/php/header.html', function () {
+    $('#header').load('./assets/php/header.html', function () {
         // Initialisation du script navbar.js après le chargement du contenu de la balise <header>	
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.querySelector('.menu');

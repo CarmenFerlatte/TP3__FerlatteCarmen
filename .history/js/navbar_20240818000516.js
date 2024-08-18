@@ -26,5 +26,5 @@ $(function() {
                 menu.classList.remove('flex', 'flex-col', 'items-center', 'justify-center', 'space-y-4');
             }
         });
-    });
+    }
 });
