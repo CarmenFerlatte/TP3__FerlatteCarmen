@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mon Portefolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/validate.js" defer></script>
+    <script src="js/install.js" defer></script>
+    <script>
+        $(function(){
+            $("#header").load("assets/php/header.html");
+            $("#footer").load("assets/php/footer.html");
+        });
+    </script>
+</head>
+
+<body class="bg-black text-white h-dvh">
+    <header id="header"></header>
+<main>
+    <section class="container mx-auto px-4 py-20">
+        <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-10 mt-10">Contactez-moi</h1>
+        </div>
+
+        <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-cyan-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="text-white relative px-4 py-10 bg-cyan-600 shadow-lg sm:rounded-3xl sm:p-20">
+
+            <div class="text-center pb-6">
+                <h1 class="text-3xl">Contactez-moi</h1>
+
+                <p class="text-gray-300">
+                    Besoin d'informations ! Remplir le formulaire ci-dessous.
+                </p>
+            </div>
+
+       <form id="form" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+                <input type="hidden" name="access_key" value="61bff5e7-bee4-41b3-9a68-95d34fd2669c">
+                <input type="hidden" name="redirect" value="https://carmen.ferlatte.com/merci.html">
+                <input type="hidden" name="subject" value="Nouveau message de carmen.ferlatte.com">
+                <input type="hidden" name="replyTo" value="
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring focus:border-pink-500"
+                        type="text" placeholder="* Prénom et nom" name="name" required>
+                        <span id="name-Error" class="text-red-500 font-bold bg-gray-200"></span>
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring focus:border-pink-500"
+                        type="email" placeholder="* Courriel" name="email" required>
+                        <span id="email-Error" class="text-red-500 font-bold bg-gray-200"></span>
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring focus:border-pink-500"
+                        type="text" placeholder="* Sujet" name="_subject" required>
+                        <span id="_subject-Error" class="text-red-500 font-bold bg-gray-200"></span>
+
+                <textarea
+                    class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline textarea-style focus:ring focus:border-pink-500"
+                    type="text" placeholder="* Écrivez votre message ..." name="message" required></textarea>
+                    <span id="message-Error" class="text-red-500 font-bold bg-gray-200"></span>
+
+                <div class="flex justify-between">
+                    <input
+                        class="shadow bg-cyan-400 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer"
+                        type="submit" value="Envoyez  ➤">
+                    <input
+                        class="shadow bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer"
+                        type="reset">
+                </div>
+    
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+   </section>
+   
+</main>
+<footer id="footer"></footer>
+    
+</body>
+</html>
