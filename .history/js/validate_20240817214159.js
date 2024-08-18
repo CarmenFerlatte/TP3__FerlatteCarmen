@@ -49,7 +49,6 @@ function validateForm() {
     } else {
         setSuccess(messageInput);
     }
-    console.log("Form is valid: " + isValid);
 
     return isValid;
 }
@@ -65,7 +64,7 @@ function setError(input, message) {
     if (errorSpan) {
         errorSpan.textContent = message;
     } else {
-        console.error("Erreur le span n'a pas été trouvé", input.name); // console.error() permet d'afficher une erreur dans la console
+        console.error('Error span not found');
     }
 }
 
@@ -75,6 +74,6 @@ function setSuccess(input) {
     if (errorSpan) {
         errorSpan.textContent = '';
     } else {
-        console.error("Erreur le span n'a pas été trouvé", input.name);
+        console.error('Error span not found');
     }
 }

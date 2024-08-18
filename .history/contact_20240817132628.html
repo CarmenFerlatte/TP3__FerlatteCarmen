@@ -40,31 +40,31 @@
                 <h1 class="text-3xl">Contactez-moi</h1>
 
                 <p class="text-gray-300">
-                    Besoin d'informations ! Remplir le formulaire ci-dessous.
+                    Remplir le formulaire ci-dessous pour me contacter.
                 </p>
             </div>
 
-       <form id="form" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
-                <input type="hidden" name="access_key" value="61bff5e7-bee4-41b3-9a68-95d34fd2669c">
-                <input
-                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring focus:border-pink-500"
-                        type="text" placeholder="* Prénom et nom" name="name" required>
-                        <span id="name-Error" class="text-red-500 font-bold bg-gray-200"></span>
+       <form id="form" action="confirmation.html" onsubmit="return validateForm()">
 
                 <input
-                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring focus:border-pink-500"
-                        type="email" placeholder="* Courriel" name="email" required>
-                        <span id="email-Error" class="text-red-500 font-bold bg-gray-200"></span>
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Nom" name="nom" required>
+                        <span id="nom-Erreur" class="text-red-500"></span>
 
                 <input
-                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring focus:border-pink-500"
-                        type="text" placeholder="* Sujet" name="_subject" required>
-                        <span id="_subject-Error" class="text-red-500 font-bold bg-gray-200"></span>
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="email" placeholder="Courriel" name="courriel" required>
+                        <span id="courriel-Error" class="text-red-500"></span>
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Sujet" name="_sujet" required>
+                        <span id="_sujet-Error" class="text-red-500"></span>
 
                 <textarea
-                    class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline textarea-style focus:ring focus:border-pink-500"
-                    type="text" placeholder="* Écrivez votre message ..." name="message" required></textarea>
-                    <span id="message-Error" class="text-red-500 font-bold bg-gray-200"></span>
+                    class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline textarea-style"
+                    type="text" placeholder="Écrivez votre message ..." name="message" required></textarea>
+                    <span id="message-Error" class="text-red-500"></span>
 
                 <div class="flex justify-between">
                     <input
@@ -74,6 +74,7 @@
                         class="shadow bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer"
                         type="reset">
                 </div>
+                    <!-- <a href="https://veilmail.io/e/FkKh7o" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Or click here to reveal our protected email address</a> -->
     
             </form>
         </div>
@@ -82,7 +83,6 @@
 </div>
 
    </section>
-   
 </main>
 <footer id="footer"></footer>
     
