@@ -163,11 +163,11 @@
         display: block;
         font-size: 1.2rem;
         padding: 10px 0;
-        text-decoration: underline 2px #00ffff;
+        text-decoration: underline 3px #00ffff;
 
     }
 
-    .menu a:hover {
+    .menu a::hover {
         color: #00ffff;
         text-decoration: none;
         cursor:pointer;

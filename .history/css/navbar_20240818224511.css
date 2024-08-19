@@ -161,16 +161,10 @@
 
     .menu a {
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 10px 0;
-        text-decoration: underline 2px #00ffff;
-
-    }
-
-    .menu a:hover {
-        color: #00ffff;
+        color: #fff;
         text-decoration: none;
-        cursor:pointer;
     }
 
     #menu-toggle:checked ~ .menu {
