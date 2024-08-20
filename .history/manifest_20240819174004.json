@@ -1,0 +1,27 @@
+{
+    "name": "Portefolio",
+    "short_name": "Portefolio",
+    "screenshots": [
+        {
+            "src": "img/screenshots/screenshot_1.png",
+            "sizes": "1348x766",
+            "form_factor": "wide",
+            "label": "Home screen"
+        },
+        {
+            "src": "img/screenshots/screenshot_1.png",
+            "sizes": "1348x766",
+            "form_factor": "wide",
+            "label": "Home screen"
+        }
+    ],
+
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#f0f0f0",
+    "theme_color": "#f0f0f0",
+    "description": "Portefolio de mes projets",
+    "id": "1199",
+    "lang": "fr-ca",
+    "orientation": "landscape"
+}
