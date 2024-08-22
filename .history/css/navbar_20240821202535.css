@@ -1,6 +1,6 @@
 @keyframes neon-pulse {
-    0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px#0891b2, 0 0 35px#0891b2, 0 0 40px#0891b2, 0 0 50px#0891b2, 0 0 75px#0891b2; }
-    50% { text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px#0891b2, 0 0 17px#0891b2, 0 0 20px#0891b2, 0 0 25px#0891b2, 0 0 37px#0891b2; }
+    0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ffff, 0 0 35px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 75px #00ffff; }
+    50% { text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #00ffff, 0 0 17px #00ffff, 0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 37px #00ffff; }
 }
 
 .neon-text {
@@ -98,7 +98,7 @@
 
 .glitch-effect::after {
     left: -2px;
-    text-shadow: -2px 0 #0891b2;
+    text-shadow: -2px 0 #00ffff;
     clip: rect(85px, 550px, 140px, 0);
     animation: glitch-anim 2s infinite linear alternate-reverse;
 }
@@ -133,7 +133,7 @@
 .hamburger::after {
     content: '';
     display: block;
-    background: #0891b2;
+    background: #00ffff;
     height: 3px;
     width: 30px;
     transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -163,12 +163,12 @@
         display: block;
         font-size: 1.2rem;
         padding: 10px 0;
-        text-decoration: underline 2px #0891b2;
+        text-decoration: underline 2px #00ffff;
 
     }
 
     .menu a:hover {
-        color: #0891b2;
+        color: #00ffff;
         text-decoration: none;
         cursor:pointer;
     }
