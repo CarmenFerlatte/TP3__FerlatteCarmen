@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mon Portefolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/install.js" defer></script>
+    <script>
+        $(function(){
+            $("#header").load("assets/php/header.html");
+            $("#footer").load("assets/php/footer.html");
+        });
+    </script>
+</head>
+
+<body class="bg-black text-white h-dvh">
+    <header id="header"></header>
+
+<main>
+    <section class="md:h-full bg-black text-white py-8 sm:py-11 lg:py-12">
+         <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mt-20 border">Mes Réalisations</h1>
+    <div class="container flex justify-center items-center mx-auto px-4 py-10 sm:py-20 md:py-4">
+        
+        <p class="text-sm sm:text-md md:text-base lg:text-1xl xl:text-2xl leading-6 text-left lg:py-20 px-5 md:px-2 lg:px-1 2xl:px-0 text-gray-200 border">Passionnée par le développement web 🖥  et le design 🎨, j'ai réalisé divers projets mettant en œuvre mes compétences 📑  en HTML , CSS, JavaScript et React. Ces technologies 👩‍💻 me permettent de créer des interfaces dynamiques 🚀 et interactives, alliant esthétisme et fonctionnalité. Parallèlement, j'explore ma créativité à travers des travaux de design élaborés avec la suite Adobe, où je m'applique avec enthousiasme 😃  à transformer des idées en visuels percutants. Mon approche multidisciplinaire me permet d'allier techniques de programmation et sens de l'esthétique <span><img class="w-7 inline-block align-middle" src="img/icons/design_web.svg" alt="icone design web"></span> , garantissant des projets non seulement performants mais également visuellement 👀 attrayants.  </p>
+
+    </div>
+
+<div class="container mx-auto px-4 py-1 md:py-5 md:mb-0 mt-[-10px] md:mt-0">
+    <div class="grid grid-cols-12 gap-4 flex items-stretch px-5 md:px-2 lg:px-1">
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+            <a href="#projets" title="Voir les projets">
+                <div class="relative group cursor-pointer bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-xl transition duration-300">
+                    <h3 class="text-lg md:text-1xl lg:text-2xl font-bold text-gray-200">Développement Web</h3>
+                    <p class="text-base md:text-lg lg:text-1xl  text-gray-300 mt-4 mb-1">Projets réalisés en HTML, CSS, JavaScript et React.</p>
+                    <p class="flex">
+                        <img src="img/icons/html5_icon.svg" alt="HTML5 icône" class="w-8 h-8 mt-2 mx-1">
+                        <img src="img/icons/css3_icon.svg" alt="CSS3 icône" class="w-8 h-8 mt-2 mx-1">
+                        <img src="img/icons/javascript_icon.svg" alt="JavaScript icône" class="w-7 h-7 mt-3 mx-1">
+                        <img src="img/icons/react_native_icon.svg" alt="React icône" class="w-8 h-8 mt-3 mx-1">
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col">
+            <a href="#galerie" title="Voir les designs" class="flex-grow">
+                <div class="relative group cursor-pointer bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-xl transition duration-300 flex flex-col">
+                    <h3 class="text-lg md:text-1xl lg:text-2xl font-bold text-gray-200 group">Design Graphique</h3>
+                    <p class="text-base md:text-lg lg:text-1xl text-gray-300 mt-4 mb-1">Designs graphiques avec la suite Adobe et PowerPoint.</p>
+                    <div class="flex">
+                        <img src="img/icons/adobe-illustrator_icon.svg" alt="Illustrator icône" class="w-8 h-8 mt-2 mx-1">
+                        <img src="img/icons/adobe_photoshop_icon.svg" alt="Photoshop icône" class="w-8 h-8 mt-2 mx-1">
+                        <img src="img/icons/adobe_indesign_icon.svg" alt="InDesign icône" class="w-8 h-8 mt-2 mx-1">
+                        <img src="img/icons/adobe-xd_icon.svg" alt="XD icône" class="w-8 h-8 mt-2 mx-1">
+                        <img src="img/icons/Adobe_Acrobat_Reader_icon.svg" alt="Acrobat Reader icône" class="w-6 h-6 mt-3 mx-1">
+                        <img src="img/icons/microsoft_powerpoint_icon.svg" alt="PowerPoint icône" class="w-8 h-8 mt-2 mx-1">
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col">
+            <a href="#galerie" title="Voir les projets" class="flex-grow">
+                <div class="relative group cursor-pointer bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 hover:shadow-xl transition duration-300 flex flex-col">
+                    <h3 class="text-lg md:text-1xl lg:text-2xl font-bold text-gray-200">Intelligence Artificielle</h3>
+                    <p class="text-base md:text-lg lg:text-2xl text-gray-300 mt-4 mb-1">Création de logos avec l'intelligence artificielle.</p>
+                    <div class="flex">
+                        <img src="img/icons/intelligence_artificielle_icon.svg" alt="PowerPoint icône" class="w-8 h-8 mt-2 mx-1">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    </section>
+
+    <section class="cyber-grid h-full">
+        <div class="w-10/12 lg:w-11/12 mx-auto pt-10 flex items-end space-x-4">
+            <h2 id="projets" class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-500 lg:text-3xl dark:text-white">Projets</h2>
+            <p class="text-1xl md:text-2xl text-gray-300 dark:text-gray-300">
+                Projets réalisés en html, css et JavaScript.
+                </p>
+        </div>
+    <div class="container mx-auto py-8 md:mt-2 px-2 md:px-2 lg:px-0">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4 w-full mx-auto place-items-start px-10 sm:px-0">
+            <img class="hover:opacity-75" src="img/screenshots/2024__projet__salon_de_coiffure.jpg" alt="image">
+            <img class="hover:opacity-75" src="img/screenshots/2024__projet__restaurant.png" alt="image">
+            <img class="hover:opacity-75" src="img/screenshots/2024__projet_cinema.png" alt="image">
+            <img class="hover:opacity-75" src="img/screenshots/2024__projet__vincent_grenier_w600.jpg" alt="image">
+            <img class="hover:opacity-75" src="img/screenshots/mon_premier_projet_react.jpg" alt="image">
+            <img class="hover:opacity-75" src="img/screenshots/2023__projet__soins_infirmiers.png" alt="image">
+        </div>
+    </div>
+</section>
+    <section class="dark:bg-gray-800 h-full">
+        
+        <div class="w-10/12 lg:w-11/12 mx-auto my-16 flex items-center space-x-4">
+            
+            <h2 id="galerie" class="text-3xl md-text-4xl font-bold text-gray-500 dark:text-white border">Galerie</h2>
+
+            <p class="text-1xl md:text-2xl text-gray-300 dark:text-gray-300 lg:pr-8">
+                Mes designs graphiques avec Adobe Illustrator, InDesign, Photoshop et PowerPoint de Microsoft Office.
+            </p>
+        </div>
+
+    <div class="mx-auto h-auto max-w-screen-2xl px-4 md:px-8 mb-16 mt-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 gap-4 md:gap-6 xl:gap-8">
+            <!-- image - start -->
+            <a href="https://le-redacteur-sportif.ca/harricana_trail_2023.html" title="Le Rédacteur Sportif" target="_blank" rel="noopener noreferrer"
+                class="group relative flex items-end h-72 md:h-80 overflow-hidden rounded-lg bg-gray-100 shadow-lg">
+                <img src="img/design/harricana_trail_80km__charlevoix__Vincent_Greniert.jpg" loading="lazy" alt="Projet Carmen Ferlatte Adobe InDesign (brochure)" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">PowerPoint</span>
+            </a>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex items-end h-72 md:h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="img/design/05__affiche_bungee__Carmen_Ferlatte.jpg" loading="lazy" alt="Projet Carmen Ferlatte Adobe Illustrator (affiche)" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Illustrator + Photoshop + Mockup</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex items-end h-72 md:h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="img/design/exercice_inDesign__Carmen_Ferlatte.jpg" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">InDesign</span>
+            </div>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <a href="https://le-redacteur-sportif.ca/harricana_trail_2023.html" title="Le Rédacteur Sportif" target="_blank" rel="noopener noreferrer"
+                class="group relative flex items-end h-72 md:h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="img/design/casquette__RS__w1200.jpg" loading="lazy" alt="Affiche médias sociaux PowerPoint / Carmen Ferlatte" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Photoshop + Mockup</span>
+            </a>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <div
+                class="group relative flex h-72 md:h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="img/design/projet__brochure__spa__450x345.jpg" loading="lazy" alt="Brochure InDesign et Mockup / Carmen Ferlatte" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">InDesign / Mockup</span>
+            </div>
+            <!-- image - end -->
+             <!-- image - start -->
+            <div
+                class="group relative flex h-72 md:h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="img/design/logo_colley_carmen_ferlatte.jpg" loading="lazy" alt="Logo fait avec l'Intélligence artificielle / Carmen Ferlatte" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Intélligence artificielle</span>
+            </div>
+            <!-- image - end -->
+        </div>
+    </div>
+</section>
+</main>
+
+   <footer id="footer" class="block clear-both mt-16"></footer>
+</body>
+</html>
