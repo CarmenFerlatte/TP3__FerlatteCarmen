@@ -52,7 +52,7 @@
 
                     <div class="flex justify-center space-x-4">
                         <a href="tel:+1-418-295-6498" class="text-2xl text-white hover:text-pink-400" title="Téléphone"><i class="fas fa-phone"></i></a>
-                        <a href="mailto:carmen.ferlatte@cfweb.ca" class="text-2xl text-white hover:text-pink-400" title="Courriel"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:carmen.ferlatte@cfweb.ca>" class="text-2xl text-white hover:text-pink-400" title="Courriel"><i class="fas fa-envelope"></i></a>
                         <a href="https://maps.app.goo.gl/Df1AS9jSJGccHZaSA" target="_blank" rel="noopener" class="text-2xl text-white hover:text-pink-400" title="Adresse"><i class="fas fa-map-marker-alt"></i></a>
                     </div>
                 </div>
@@ -129,7 +129,8 @@
                         <span id="_subject-Error" class="text-red-500 font-bold bg-gray-200"></span>
 
                 <textarea
-                    class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline textarea-style focus:ring focus:border-pink-500" placeholder="* Écrivez votre message ..." name="message" required></textarea>
+                    class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline textarea-style focus:ring focus:border-pink-500"
+                    type="text" placeholder="* Écrivez votre message ..." name="message" required></textarea>
                     <span id="message-Error" class="text-red-500 font-bold bg-gray-200"></span>
 
                 <div class="flex justify-between">
@@ -148,12 +149,12 @@
 
    </section>
    
-        <div class="relative w-full h-96 shadow-zinc-600 mb-72">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5334653.953292215!2d-72.23184414497779!3d492420629469351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x4c8e8a070fe23e1f%3A0x7f3dcf2c2048f82d!2zQ8O0dGUtTm9yZCwgUUM!5e0!3m2!1sfr!2sca!4v1724210639284!5m2!1sfr!2sca"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="1920" height="600" aria-hidden="false" tabindex="0">
-    </iframe>
-</div>
+        <div class="relative w-full h-96 shadow-zinc-600 absolute top-0 left-0 w-full h-full">
+            <iframe class="" title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5334653.953292215!2d-72.23184414497779!3d49.2420629469351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c8e8a070fe23e1f%3A0x7f3dcf2c2048f82d!2zQ8O0dGUtTm9yZCwgUUM!5e0!3m2!1sfr!2sca!4v1724210639284!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
     
   
 </main>
