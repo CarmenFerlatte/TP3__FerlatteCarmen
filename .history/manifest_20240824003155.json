@@ -61,7 +61,7 @@
             "purpose": "maskable"
         },
         {
-            "src": "img/icons/maskable-icon-512x512.png",
+            "src": "img/icons/maskable-icon__512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
@@ -72,7 +72,7 @@
             "type": "image/png"
         },
         {
-            "src": "img/icons/icon-512x512.png",
+            "src": "img/icons",
             "sizes": "512x512",
             "type": "image/png"
         }

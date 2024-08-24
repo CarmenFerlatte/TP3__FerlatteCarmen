@@ -19,7 +19,7 @@
     ],
     "icons": [
         {
-            "src": "img/icons/maskable-icon-72x72.png",
+            "src": "img/icons/",
             "sizes": "72x72",
             "type": "image/png",
             "purpose": "maskable"
