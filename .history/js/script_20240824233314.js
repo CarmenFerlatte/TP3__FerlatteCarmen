@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 );
 
-
 // ACCORDEON
 
 document.addEventListener("DOMContentLoaded", function () { 

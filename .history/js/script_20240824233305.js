@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 );
 
 
-// ACCORDEON
+// Accordeon menu
 
 document.addEventListener("DOMContentLoaded", function () { 
     let elements = document.querySelectorAll("[data-menu]");

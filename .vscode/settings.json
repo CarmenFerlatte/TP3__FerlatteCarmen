@@ -57,6 +57,7 @@
     "chargement",
     "choisis",
     "cible",
+    "classe",
     "classement",
     "clés",
     "Colonne",
@@ -121,6 +122,7 @@
     "découvertes",
     "defered",
     "définir",
+    "Délai",
     "délais",
     "demandes",
     "dépasser",
@@ -144,9 +146,11 @@
     "droite",
     "durée",
     "dynamiques",
+    "échoué",
     "Écrivez",
     "également",
     "élaborés",
+    "Élément",
     "éléments",
     "employé",
     "endroit",
@@ -165,6 +169,7 @@
     "expériences",
     "extene",
     "extérieure",
+    "externe",
     "facilement",
     "facilite",
     "facteurs",
@@ -422,7 +427,8 @@
     "visuels",
     "voici",
     "vous",
-    "vulnérabilités"
+    "vulnérabilités",
+    "Webmestres"
   ],
   "liveServer.settings.port": 5501
 }

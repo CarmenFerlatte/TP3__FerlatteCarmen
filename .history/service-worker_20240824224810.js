@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stack-cache-v1';
+const CACHE_NAME = 'stack-cache-v7';
 
 const FILES_TO_CACHE = [
     './offline.html',
@@ -30,24 +30,24 @@ self.addEventListener('install', (evt) => {
 self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker] Activate');
 
-    evt.waitUntil(
-        caches.keys().then((keyList) => {
-            return Promise.all(keyList.map((key) => {
-                if (key !== CACHE_NAME) {
-                    console.log('[ServiceWorker] Retirer la vieille cache', key);
-                    return caches.delete(key);
-                }
-            }));
-        })
-    );
+    // evt.waitUntil(
+    //     caches.keys().then((keyList) => {
+    //         return Promise.all(keyList.map((key) => {
+    //             if (key !== CACHE_NAME) {
+    //                 console.log('[ServiceWorker] Retirer la vieille cache', key);
+    //                 return caches.delete(key);
+    //             }
+    //         }));
+    //     })
+    // );
 
     self.clients.claim();
 });
 
-// ACCÈS à une ressource mise en cache
+// ACCÈS aux ressources mises en cache
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
-    // Gestion de l'évènement Fetch (accès à une ressource mise en cache)
+
     if (evt.request.mode !== 'navigate') {
         return;
     }

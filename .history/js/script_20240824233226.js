@@ -22,14 +22,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
         } else {
-            console.warn('Élément avec la classe .btn-lien non trouvé');
-        }
-    }, 100); // Délai de 100ms pour s'assurer que le DOM est chargé.
-}
-);
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const lienButton = document.querySelector('.btn-lien');
+                if (lienButton) {
+                    lienButton.addEventListener('click', function () {
+                        document.querySelector('#section-1').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                } else {
+                    console.warn('Élément avec la classe .btn-lien non trouvé');
+                }
+            });
+        
+        }, 100); // Délai de 100ms pour s'assurer que le DOM est chargé.
+});
 
 
-// ACCORDEON
+// Accordeon menu
 
 document.addEventListener("DOMContentLoaded", function () { 
     let elements = document.querySelectorAll("[data-menu]");

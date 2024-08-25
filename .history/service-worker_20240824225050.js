@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stack-cache-v1';
+const CACHE_NAME = 'stack-cache-v7';
 
 const FILES_TO_CACHE = [
     './offline.html',
@@ -44,10 +44,10 @@ self.addEventListener('activate', (evt) => {
     self.clients.claim();
 });
 
-// ACCÈS à une ressource mise en cache
+// ACCÈS à unr ressource mises en cache
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
-    // Gestion de l'évènement Fetch (accès à une ressource mise en cache)
+
     if (evt.request.mode !== 'navigate') {
         return;
     }
