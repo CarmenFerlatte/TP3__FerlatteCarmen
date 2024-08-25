@@ -14,6 +14,7 @@ $(function() {
                 menu.classList.add('hidden');
                 menu.classList.remove('flex', 'flex-col', 'items-center', 'justify-center', 'space-y-4');
             }
+            
         });
 
         window.addEventListener('resize', function () {
