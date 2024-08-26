@@ -1,0 +1,53 @@
+.carousel-control {
+    position: absolute;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+    cursor: pointer;
+    outline: none;
+
+    &-prev {
+    left: 0;
+    }
+
+    &-next {
+    right: 0;
+    }
+
+    span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+
+    &span:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    
+
+    }
+}
+
+
+
+
+
+.carousel-control span .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
