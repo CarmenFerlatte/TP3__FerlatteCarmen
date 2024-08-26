@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0"
+  },
+  "devDependencies": {
+    "purgecss": "^6.0.0",
+    "sass": "^1.32.0"
+  },
+  "scripts": {
+    "build:css": "sass ./ ./path/to/tailwind.min.css && sass ./path/to/all.min.scss ./path/to/all.min.css",
+    "purgecss": "purgecss --config purgecss.config.js",
+    "build": "npm run build:css && npm run purgecss"
+  }
+} 
