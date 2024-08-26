@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr-ca">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portefolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -26,7 +26,20 @@
         $("#footer").load("assets/php/footer.html");
       });
     </script>
-    
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(
+            (reg) => {
+              console.log("ServiceWorker en marche ", reg);
+            },
+            function (err) {
+              console.log("ServiceWorker a échoué: ", reg);
+            }
+          );
+        });
+      }
+    </script>
   </head>
 
   <body class="bg-black text-white h-dvh">
