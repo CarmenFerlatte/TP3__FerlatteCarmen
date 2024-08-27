@@ -225,7 +225,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s;
 }
-.carousel-control spanspan:hover {
+.carousel-control span:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel-control span svg {
