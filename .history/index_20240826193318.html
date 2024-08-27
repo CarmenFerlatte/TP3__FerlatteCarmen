@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/headerfooter.js" defer></script>
     <script src="./js/script.js" defer></script>
+    <script src="./service-worker.js" defer></script>
     <script>
         $(function () {
             $('#header').load('assets/php/header.html');
@@ -36,8 +37,6 @@
             });
         }
     </script>
-    <script src="./service-worker.js" defer></script>
-    <script src="./js/install.js" defer></script>
 </head>
 
 <body class="bg-black text-white h-dvh">
@@ -137,7 +136,7 @@
             </article>
             <article
                 class="relative flex flex-col justify-start px-4 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50 lg:col-span-4">
-                <img src="img/bg_ampoule__822x462.jpg" alt="Ampoule" class="absolute inset-0 object-cover w-full h-full -z-10">
+                <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxibG9jayUyMGNoYWlufGVufDB8MHx8fDE3MTI3NTMxNjd8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
                 <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                 <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
 
@@ -274,14 +273,16 @@
             </div>
             
         </section>
-        <div class="container mx-20 flex justify-center items-center">
-          <button
-          class="flex items-center btn-lien justify-center gap-2 p-5 py-1 sm:py-3 ml-5 font-semibold" type="button" title="Open Script"
+        <!--butInstall caché pour que Lighthouse puisse le détecter car il ne le détecte pas dans la navbar-->
+        <div class="container">
+            <button
+          class="flex items-center hidden btn-lien justify-center gap-2 rounded-2xl bg-[#e1832b] p-5 py-1 sm:py-3 ml-5 font-semibold" type="button" title="Open Script"
           id="butInstall"
+          type="button"
           aria-label="Installer l'application"
           hidden>
           Installer
-          <span><img class="w-6" src="img/icons/download_blanc__24x24.png" alt="Télécharger l'application"></span>
+          <span><img class="w-6" src="img/icons/download_blanc__24x24.png"></span>
         </button>
         </div>
         
@@ -289,6 +290,7 @@
     </main>
 
     <footer id="footer" class="block clear-both mt-16"></footer>
+     <script src="./js/install.js" ></script>
     
 </body>
 </html>

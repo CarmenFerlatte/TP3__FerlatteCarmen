@@ -3,9 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let deferedInstallPrompt = null;
     const installButton = document.getElementById('butInstall');
-
     installButton.addEventListener('click', installPWA);
-    
     window.addEventListener('beforeInstallPrompt', afficherBoutonInstall);
 
     function afficherBoutonInstall(evt) {

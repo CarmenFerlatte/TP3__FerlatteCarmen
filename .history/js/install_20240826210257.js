@@ -1,10 +1,12 @@
 // Script pour l'installation de la PWA
 
+
 document.addEventListener('DOMContentLoaded', function () {
     let deferedInstallPrompt = null;
     const installButton = document.getElementById('butInstall');
 
     installButton.addEventListener('click', installPWA);
+    
     
     window.addEventListener('beforeInstallPrompt', afficherBoutonInstall);
 
@@ -30,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function () {
     function logAppInstalled(evt) {
         console.log("L'usager a installé la PWA VIA Les ... de Chrome");
         }
-    }
+        }
 });

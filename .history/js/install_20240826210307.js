@@ -1,5 +1,6 @@
 // Script pour l'installation de la PWA
 
+
 document.addEventListener('DOMContentLoaded', function () {
     let deferedInstallPrompt = null;
     const installButton = document.getElementById('butInstall');

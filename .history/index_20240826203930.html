@@ -18,6 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/headerfooter.js" defer></script>
     <script src="./js/script.js" defer></script>
+    <script src="./js/install.js" defer></script>
+    <script src="./service-worker.js" defer></script>
     <script>
         $(function () {
             $('#header').load('assets/php/header.html');
@@ -36,8 +38,6 @@
             });
         }
     </script>
-    <script src="./service-worker.js" defer></script>
-    <script src="./js/install.js" defer></script>
 </head>
 
 <body class="bg-black text-white h-dvh">
@@ -274,15 +274,8 @@
             </div>
             
         </section>
-        <div class="container mx-20 flex justify-center items-center">
-          <button
-          class="flex items-center btn-lien justify-center gap-2 p-5 py-1 sm:py-3 ml-5 font-semibold" type="button" title="Open Script"
-          id="butInstall"
-          aria-label="Installer l'application"
-          hidden>
-          Installer
-          <span><img class="w-6" src="img/icons/download_blanc__24x24.png" alt="Télécharger l'application"></span>
-        </button>
+        <div class="container">
+            
         </div>
         
 

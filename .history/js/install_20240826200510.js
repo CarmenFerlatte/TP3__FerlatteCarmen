@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let deferedInstallPrompt = null;
     const installButton = document.getElementById('butInstall');
 
-    installButton.addEventListener('click', installPWA);
-    
+    if (installButton) {
+        installButton.addEventListener('click', installPWA);
+    } else {
+        console.error("Element butInstall non trouvé");
+    }
+
     window.addEventListener('beforeInstallPrompt', afficherBoutonInstall);
 
     function afficherBoutonInstall(evt) {
@@ -25,10 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 deferedInstallPrompt = null;
             });
-    
+    }
+
+    window.addEventListener('appinstalled', logAppInstalled);
 
     function logAppInstalled(evt) {
         console.log("L'usager a installé la PWA VIA Les ... de Chrome");
-        }
     }
 });
