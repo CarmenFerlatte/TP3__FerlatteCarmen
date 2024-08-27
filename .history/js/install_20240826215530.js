@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function installPWA(evt) {
         deferredInstallPrompt.prompt();
         evt.srcElement.setAttribute('hidden', true);
-        deferredInstallPrompt.userChoice
+        def
             .then((choice) => {
                 if (choice.outcome === 'accepted') {
                     console.log("L'usager a installé la PWA VIA le mon bouton d'installation", choice);
@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 deferredInstallPrompt = null;
             });
-        
-    window.addEventListener('appInstalled', logAppInstalled);
+    
 
     function logAppInstalled(evt) {
         console.log("L'usager a installé la PWA VIA Les ... de Chrome");

@@ -23,10 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     console.log("L'usager a refusé l'installation de la PWA VIA le bouton d'installation", choice);
                 }
-                deferredInstallPrompt = null;
+                def = null;
             });
-        
-    window.addEventListener('appInstalled', logAppInstalled);
+    
 
     function logAppInstalled(evt) {
         console.log("L'usager a installé la PWA VIA Les ... de Chrome");

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('beforeinstallprompt', afficherBoutonInstall);
 
     function afficherBoutonInstall(evt) {
-        deferredInstallPrompt = evt;
+        dev
         installButton.removeAttribute('hidden');
     }
 
@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 deferredInstallPrompt = null;
             });
-        
-    window.addEventListener('appInstalled', logAppInstalled);
+    
 
     function logAppInstalled(evt) {
         console.log("L'usager a installé la PWA VIA Les ... de Chrome");

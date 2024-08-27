@@ -1,7 +1,7 @@
 // Script pour l'installation de la PWA
 
 document.addEventListener('DOMContentLoaded', function () {
-    let deferredInstallPrompt = null;
+    let deferredinstall = null;
     const installButton = document.getElementById('butInstall');
 
     installButton.addEventListener('click', installPWA);
@@ -9,21 +9,21 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('beforeinstallprompt', afficherBoutonInstall);
 
     function afficherBoutonInstall(evt) {
-        deferredInstallPrompt = evt;
+        deferredinstall = evt;
         installButton.removeAttribute('hidden');
     }
 
     function installPWA(evt) {
-        deferredInstallPrompt.prompt();
+        deferredinstall.prompt();
         evt.srcElement.setAttribute('hidden', true);
-        deferredInstallPrompt.userChoice
+        deferredinstall.userChoice
             .then((choice) => {
                 if (choice.outcome === 'accepted') {
                     console.log("L'usager a installé la PWA VIA le mon bouton d'installation", choice);
                 } else {
                     console.log("L'usager a refusé l'installation de la PWA VIA le bouton d'installation", choice);
                 }
-                deferredInstallPrompt = null;
+                deferredinstall = null;
             });
         
     window.addEventListener('appInstalled', logAppInstalled);
