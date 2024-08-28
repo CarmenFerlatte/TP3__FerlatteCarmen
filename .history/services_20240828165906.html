@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portefolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Portefolio">
+    <meta name="description" content="Carmen Ferlatte, web designer et étudiante en développement web front-end. Présentation de mon portefolio et services de Webmestre.">
+    <meta name="theme-color" content="black" >
+    <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" >
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/headerfooter.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/install.js" defer></script>
+    <script src="./service-worker.js" defer></script>
+    <script>
+      $(function () {
+        $("#header").load("assets/php/header.html");
+        $("#footer").load("assets/php/footer.html");
+      });
+    </script>
+    
+  </head>
+
+  <body class="bg-black text-white h-dvh">
+    <header id="header"></header>
+
+    <main>
+      <section id="services" class="block h-screen">
+        <h2 class="text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold pt-32 pb-16">Services</h2>
+        <div class="container grid grid-cols-12 gap-4 mt-8 mx-auto">
+          <div class="col-span-6 bg-gray-800 p-4 rounded-lg">
+            <h3 class="text-2xl">Un service personnalisé !</h3>
+            <ul class="mt-4 pl-4">
+              <li>Conception de votre site web selon vos besoins.</li>
+              <li>Création d'un design qui correspond à votre image de marque.</li>
+              <li>Refonte de votre site web.</li>
+              <li>Site web interactif et dynamique.</li>
+              <li>Moteurs de recherche optimisés.</li>
+              <li>Entretien de votre site.</li>
+
+              
+            </ul>
+          </div>
+          <div class="col-span-6 bg-cyan-800 p-4 rounded-lg">
+            <h3 class="text-2xl">À prévoir pour la conception de votre site web !</h3>
+              <ul class="mt-4 pl-4">
+                <li>Descriptif de votre entreprise.</li>
+                <li>Le nombre de pages.</li>
+                <li>Titre des pages.</li>
+                <li>Brève description pour les sevices offerts.</li>
+                <li>Des photos. « Une image vaut milles mots » </li>
+                <li>Si vous n'avez pas d'idée, je peux vous aider !</li>
+              </ul>
+          </div>
+          <div class="col-span-6 bg-cyan-800 p-4 rounded-lg">
+            <h3 class="text-2xl">Graphisme</h3>
+            <ul class="mt-4 pl-4">
+              <li>Affiche publication Facebook;</li>
+              <li>Affiches d'évènements;</li>
+              <li>Logo;</li>
+              <li>Carte d'affaire;</li>
+              <li>Brochure;</li>
+              <li>Formulaire interactif PDF.</li>
+            </ul>
+          </div>
+          <div class="col-span-6 bg-gray-800 p-4 rounded-lg">
+            <h3 class="text-2xl">Entretien de votre site web !</h3>
+            <p class="mt-4">
+              Votre entreprise ou organisme a un site web, mais vous n'avez pas le temps de le mettre à jour. Je peux m'en occuper pour vous.
+              N'hésitez pas à me contacter pour plus d'informations.
+            </p>
+            <div class="flex items-end">
+            <button class="bg-rose-700 text-white px-4 py-2 mt-4 rounded-lg hover:bg-gray-500 self-end" type="button">Contactez-moi !</button>
+            <button class="bg-cyan-700 text-white px-4 py-2 mt-4 ml-2 rounded-lg hover:bg-gray-500 self-end" type="button">Prendre rendez-vous !</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="h-screen w-full dark:bg-gray-900 cyber-grid">
+        <h2 id="section-1" class="text-center py-16 text-2xl font-bold tracking-tight text-gray-500 sm:text-4xl dark:text-white">
+                Choisir un plan !
+            </h2>
+    <div class="container grid grid-cols-12 gap-4 mt-8 mx-auto">      
+
+        <div
+            class="col-span-12 sm:col-span-4 p-6 bg-black border border-gray-700 rounded-lg sm:rounded-r-none sm:p-8 bg-slate-900">
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold jakarta text-gray-100 sm:text-4xl">Vitrine</h3>
+            </div>
+            <div class="mb-4 space-x-2">
+                <span class="text-4xl font-bold text-gray-100">1 200 $</span>
+            </div>
+            <ul class="mb-6 space-y-2 text-gray-300">
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Création et conception du site (1 page)</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Hébergement et nom de domaine</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Optimisation pour appareils mobiles</span>
+                </li>
+            </ul>
+            <a href="#"
+                class="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-white rounded-lg outline-none bg-opacity-10 hover:bg-opacity-20 md:text-base">Choisir ce plan</a>
+        </div>
+
+        <div class="col-span-12 sm:col-span-4 p-6 rounded-lg shadow-xl bg-gradient-to-br from-cyan-600 to-purple-600 sm:p-8">
+            <div class="flex flex-col items-start justify-between gap-4 mb-6 lg:flex-row">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white jakarta sm:text-4xl">Nouveau look !</h3>
+                </div>
+                <!-- <span class="order-first inline-block px-3 py-1 text-xs font-semibold tracking-wider text-white uppercase bg-black rounded-full lg:order-none bg-opacity-20">Go Pro</span> -->
+            </div>
+            <div class="mb-4 space-x-2">
+                <span class="text-4xl font-bold text-white">2 100 $</span>
+                <!-- <span class="text-2xl text-indigo-100 line-through">2 500 $</span> -->
+            </div>
+            <ul class="mb-6 space-y-2 text-indigo-100">
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Refonte du site web</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Hébergement et nom de domaine</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" class=""></path>
+                    </svg>
+                    <span class="">Optimisation pour les appareils mobiles</span>
+                </li>
+               
+            </ul>
+            <a href="#"
+                class="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-white rounded-lg outline-none bg-opacity-20 hover:bg-opacity-30 md:text-base">Cette option m'intéresse !</a>
+        </div>
+        
+        <div class="col-span-12 sm:col-span-4 p-6 bg-black border border-gray-700 rounded-lg bg-opacity-20 sm:rounded-r-none sm:p-8">
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold jakarta text-gray-100 sm:text-4xl">Premier site Web</h3>
+            </div>
+            <div class="mb-4 space-x-2">
+                <span class="text-4xl font-bold text-gray-100">3 100 $</span>
+            </div>
+            <ul class="mb-6 space-y-2 text-gray-300">
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Création et conception du site (max. 5 pages)</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Hébergement et nom de domaine</span>
+                </li>
+                <li class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="">Optimisation pour appareils mobiles</span>
+                </li>
+            </ul>
+            <a href="#"
+                class="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-white rounded-lg outline-none bg-opacity-10 hover:bg-opacity-20 md:text-base">Choisir ce plan</a>
+        </div>
+    </div>
+      </section>
+
+    </main>
+    <footer id="footer" class="block clear-both mt-16"></footer>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portefolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Portefolio">
+    <meta name="description" content="Carmen Ferlatte, web designer et étudiante en développement web front-end. Présentation de mon portefolio et services de Webmestre.">
+    <meta name="theme-color" content="black" >
+    <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" >
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/headerfooter.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/install.js" defer></script>
+    <script src="./service-worker.js" defer></script>
+    <script>
+      $(function () {
+        $("#header").load("assets/php/header.html");
+        $("#footer").load("assets/php/footer.html");
+      });
+    </script>
+    
+  </head>
+
+  <body class="bg-black text-white h-dvh">
+    <header id="header"></header>
+
+    <main>
+      <section id="services" class="block h-screen">
+        <h2 class="text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold pt-32 pb-16">Services</h2>
+        <div class="container grid grid-cols-12 gap-4 mt-8 mx-auto">
+          <div class="col-span-6 bg-gray-800 p-4 rounded-lg">
+            <h3 class="text-2xl">Un service personnalisé !</h3>
+            <ul class="mt-4 pl-4">
+              <li>Conception de votre site web selon vos besoins.</li>
+              <li>Création d'un design qui correspond à votre image de marque.</li>
+              <li>Refonte de votre site web.</li>
+              <li>Site web interactif et dynamique.</li>
+              <li>Moteurs de recherche optimisés.</li>
+              <li>Entretien de votre site.</li>
+
+              
+            </ul>
+          </div>
+          <div class="col-span-6 bg-cyan-800 p-4 rounded-lg">
+            <h3 class="text-2xl">À prévoir pour la conception de votre site web !</h3>
+              <ul class="mt-4 pl-4">
+                <li>Descriptif de votre entreprise.</li>
+                <li>Le nombre de pages.</li>
+                <li>Titre des pages.</li>
+                <li>Brève description pour les sevices offerts.</li>
+                <li>Des photos. « Une image vaut milles mots » </li>
+                <li>Si vous n'avez pas d'idée, je peux vous aider !</li>
+              </ul>
+          </div>
+          <div class="col-span-6 bg-cyan-800 p-4 rounded-lg">
+            <h3 class="text-2xl">Graphisme</h3>
+            <ul class="mt-4 pl-4">
+              <li>Affiche publication Facebook;</li>
+              <li>Affiches d'évènements;</li>
+              <li>Logo;</li>
+              <li>Carte d'affaire;</li>
+              <li>Brochure;</li>
+              <li>Formulaire interactif PDF.</li>
+            </ul>
+          </div>
+          <div class="col-span-6 bg-gray-800 p-4 rounded-lg">
+            <h3 class="text-2xl">Entretien de votre site web !</h3>
+            <p class="mt-4">
+              Votre entreprise ou organisme a un site web, mais vous n'avez pas le temps de le mettre à jour. Je peux m'en occuper pour vous.
+              N'hésitez pas à me contacter pour plus d'informations.
+            </p>
+            <div class="flex items-end">
+            <button class="bg-rose-700 text-white px-4 py-2 mt-auto  rounded-lg hover:bg-gray-500 self-end">Contactez-moi !</button>
+            <button class="bg-cyan-700 text-white px-4 py-2 mt-4 ml-2 rounded-lg hover:bg-gray-500 self-end">Prendre rendez-vous !</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer id="footer" class="block clear-both mt-16"></footer>
+  </body>
+</html>
