@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre rendez-vous</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Portefolio">
+    <meta name="description" content="Carmen Ferlatte, web designer et étudiante en développement web front-end. Présentation de mon portefolio et services de Webmestre.">
+    <meta name="theme-color" content="black" >
+    <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" >
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/headerfooter.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script>
+      $(function () {
+        $("#header").load("assets/php/header.html");
+        $("#footer").load("assets/php/footer.html");
+      });
+    </script>
+    
+  </head>
+
+  <body class="bg-black text-white h-dvh">
+    <header id="header"></header>
+    <main>
+        <section class="mx-auto px-4 py-20">
+            
+                <h1 class="text-4xl font-bold text-center mb-10 pt-20">Prendre rendez-vous !</h1>
+            
+            <div class="grid grid-cols-12 gap-6 min-h-screen py-6 sm:py-12 border">
+                
+                <div class="relative py-3 sm:max-w-xl sm:mx-auto col-span-12 w-full border">
+                    <div class="text-white text-center pb-6">
+                        <h2 class="text-3xl pb-4">Calendrier</h2>
+                        <p class="text-gray-300">
+                            Pour prendre rendez-vous, veuillez consulter mon calendrier.
+                        </p>
+                    </div>
+                        <div class="container flex justify-center bg-white space-x-4 w-full border">
+                        <!-- Google Calendar Appointment Scheduling begin -->
+                            <iframe title="Calendrier"
+                            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1s-Ww4rIM0G6FFt2pcuXbWKi-pF6YNmCNhU7ejdf3pby4AbVBBd-E0xzXAvkR4g75DXurEsyi2?gv=true" style="border: 0" width="100%" height="100" frameborder="0" alt="Calendrier"
+                            ></iframe>
+                        <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    
+                </div>
+            </div>
+
+                </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    
+    
+</body>
+</html>
