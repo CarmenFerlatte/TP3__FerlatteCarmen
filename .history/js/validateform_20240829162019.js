@@ -1,6 +1,7 @@
+
 /*------validate form------*/
 
-console.log('Salut World');
+console.log('Salut le monde');
 
     function validateForm() {
         let isValid = true;
@@ -22,11 +23,11 @@ console.log('Salut World');
         if (prenom === '') {
             setError(prenomInput, "Un prénom est requis.");
             isValid = false;
-        } else if (prenom.length > 50) {
-            setError(prenomInput, "Le prénom ne peut pas dépasser 50 caractères.");
+        } else if (name.length > 50) {
+            setError(nameInput, "Le prénom ne peut pas dépasser 50 caractères.");
             isValid = false;
         } else {
-            setSuccess(prenomInput);
+            setSuccess(nameInput);
         }
 
 
@@ -41,6 +42,24 @@ console.log('Salut World');
         } else {
             setSuccess(emailInput);
         }
+
+        const telInput = document.forms['form']['tel'];
+        const tel = telInput.value.trim();
+        if (tel === '') {
+            setError(telInput, "Une numéro de téléphone est requis.");
+            isValid = false;
+        } else if (!isValidPhoneNumber(tel)) {
+            setError(telInput, 'Numéro de téléphone invalide.');
+            isValid = false;
+        } else {
+            setSuccess(telInput);
+        }
+
+        // Fonction de validation du numéro de téléphone
+        function isValidPhoneNumber(tel) {
+            const re = /^\d{10}$/;
+            return re.test(tel);
+            
 
         const subjectInput = document.forms['form']['_subject'];
         const subject = subjectInput.value.trim();

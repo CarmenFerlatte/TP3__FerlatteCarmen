@@ -26,7 +26,7 @@ console.log('Salut World');
             setError(prenomInput, "Le prénom ne peut pas dépasser 50 caractères.");
             isValid = false;
         } else {
-            setSuccess(prenomInput);
+            setSuccess(nameInput);
         }
 
 

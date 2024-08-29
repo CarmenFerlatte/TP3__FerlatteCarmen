@@ -1,6 +1,7 @@
+
 /*------validate form------*/
 
-console.log('Salut World');
+console.log('Salut le monde');
 
     function validateForm() {
         let isValid = true;
@@ -22,14 +23,14 @@ console.log('Salut World');
         if (prenom === '') {
             setError(prenomInput, "Un prénom est requis.");
             isValid = false;
-        } else if (prenom.length > 50) {
-            setError(prenomInput, "Le prénom ne peut pas dépasser 50 caractères.");
+        } else if (name.length > 50) {
+            setError(nameInput, "Le prénom ne peut pas dépasser 50 caractères.");
             isValid = false;
         } else {
-            setSuccess(prenomInput);
+            setSuccess(nameInput);
         }
 
-
+        // Fonction de validation de l'adresse courriel
         const emailInput = document.forms['form']['email'];
         const email = emailInput.value.trim();
         if (email === '') {
@@ -42,6 +43,19 @@ console.log('Salut World');
             setSuccess(emailInput);
         }
 
+        // Fonction de validation du numéro de téléphone
+        const telInput = document.forms['form']['tel'];
+        const tel = telInput.value.trim();
+        if (tel === '') {
+            setError(telInput, "Une numéro de téléphone est requis.");
+            isValid = false;
+        } else if (!isValidPhoneNumber(tel)) {
+            setError(telInput, 'Numéro de téléphone invalide.');
+            isValid = false;
+        } else {
+            setSuccess(telInput);
+        }
+
         const subjectInput = document.forms['form']['_subject'];
         const subject = subjectInput.value.trim();
         if (subject === '') {
@@ -50,7 +64,7 @@ console.log('Salut World');
         } else {
             setSuccess(subjectInput);
         }
-
+        // 
         const messageInput = document.forms['form']['message'];
         const message = messageInput.value.trim();
         if (message === '') {
@@ -67,9 +81,17 @@ console.log('Salut World');
         return isValid;
     }
 
+    // Fonction de validation de l'adresse courriel Regex
     function isValidEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
+    }
+    
+
+    // Fonction de validation du numéro de téléphone Regex
+    function isValidPhoneNumber(tel) {
+        const phoneRegex = /^[0-9]{10}$/;
+        return phoneRegex.test(tel);
     }
 
     function setError(input, message) {

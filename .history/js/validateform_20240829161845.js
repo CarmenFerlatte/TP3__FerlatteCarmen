@@ -1,6 +1,7 @@
+
 /*------validate form------*/
 
-console.log('Salut World');
+console.log('Salut le monde');
 
     function validateForm() {
         let isValid = true;
@@ -22,11 +23,11 @@ console.log('Salut World');
         if (prenom === '') {
             setError(prenomInput, "Un prénom est requis.");
             isValid = false;
-        } else if (prenom.length > 50) {
-            setError(prenomInput, "Le prénom ne peut pas dépasser 50 caractères.");
+        } else if (name.length > 50) {
+            setError(nameInput, "Le prénom ne peut pas dépasser 50 caractères.");
             isValid = false;
         } else {
-            setSuccess(prenomInput);
+            setSuccess(nameInput);
         }
 
 
@@ -40,6 +41,18 @@ console.log('Salut World');
             isValid = false;
         } else {
             setSuccess(emailInput);
+        }
+
+        const telInput = document.forms['form']['tel'];
+        const tel = telInput.value.trim();
+        if (tel === '') {
+            setError(telInput, "Une numéro de téléphone est requis.");
+            isValid = false;
+        } else if (!isValidEmail(tel)) {
+            setError(telInput, 'Un numéro de téléphone est requis.');
+            isValid = false;
+        } else {
+            setSuccess(telInput);
         }
 
         const subjectInput = document.forms['form']['_subject'];
