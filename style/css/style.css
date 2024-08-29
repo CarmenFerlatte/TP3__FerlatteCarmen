@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes neon-pulse {
   0%, 100% {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0891b2, 0 0 35px #0891b2, 0 0 40px #0891b2, 0 0 50px #0891b2, 0 0 75px #0891b2;
@@ -70,7 +71,7 @@
   align-items: center;
   justify-content: center;
   transform: translateY(100%);
-  background: linear-gradient(to bottom, #0891b2, #3e43cb);
+  background: linear-gradient(to bottom, #0891b2, rgb(103, 232, 249));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -94,7 +95,7 @@
 }
 .glitch-effect::before {
   left: 2px;
-  text-shadow: -2px 0 #ff00de;
+  text-shadow: -2px 0 rgb(236, 72, 153);
   clip: rect(24px, 550px, 90px, 0);
   animation: glitch-anim 3s infinite linear alternate-reverse;
 }
@@ -256,4 +257,9 @@
 }
 .animate-slide-in-right {
   animation: slide-in-right 0.5s ease-out forwards;
+}
+
+/*---------- Menu sélectionné ----------*/
+.custom-select option:hover {
+  background-color: #0891b2;
 }
