@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="manifest.json"> <!--Web app manifest should have the filename extension 'webmanifest'.Microsoft Edge Toolsmanifest-file-extension-->
+    <link rel="webmanifest" href="manifest.json"> <!--Web app manifest should have the filename extension 'webmanifest'.Microsoft Edge Toolsmanifest-file-extension-->
     <!-- <meta name="apple-mobile-web-app-capable" content="yes"> //Is deprecated-->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -34,6 +34,7 @@
      <script src="./js/headerfooter.js" defer></script>
     <script src="./js/validate.js" defer></script>
     <script src="./js/script.js" defer></script>
+     <script src="https://www.google.com/recaptcha/api.js" defer></script>
 
 </head>
 
@@ -158,6 +159,13 @@
         </div>
     </div>
 </div>
+
+<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
+   </section>
     
   
 </main>
